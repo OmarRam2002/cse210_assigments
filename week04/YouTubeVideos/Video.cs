@@ -5,17 +5,25 @@ public class Video
     private int _length;
     private List<Comment> _comments= new List<Comment>();
 
-    public Video(string title, string author, int length, Comment comment)
+    public Video(string title, string author, int length)
     {
         _title = title;
         _author = author;
         _length = length;
+    }
+    public void AddComment(Comment comment)
+    {
         _comments.Add(comment);
     }
 
-    public int numberOfComments()
+    public int NumberOfComments()
     {
         return _comments.Count();
     }
+    public string DisplayText()
+    {
+        return $"TITLE: {_title}; AUTHOR: {_author}; LENGTH: {_length}; NUMBER OF COMMENTS: {NumberOfComments()}";
+    }
+    
     
 }
