@@ -9,7 +9,7 @@ public class Comment
         _textOfComment = text;
     }
 
-    public string DisplayComment()
+    public string DisplaySingleComment()
     {
         return $"{_textOfComment}";
     }
