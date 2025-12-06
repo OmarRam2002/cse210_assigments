@@ -24,7 +24,7 @@ public class GoalManager
             Console.WriteLine("\t4. Load Goals");
             Console.WriteLine("\t5. Record Event");
             Console.WriteLine("\t6. Quit");
-            Console.Write("Select a choice form the menu: ");
+            Console.Write("Select a choice from the menu: ");
             userinput = Console.ReadLine();
 
             if(userinput == "1")
@@ -84,7 +84,7 @@ public class GoalManager
         Console.WriteLine("The types of goals are");
         Console.WriteLine("\t1. Simple Goal");
         Console.WriteLine("\t2. Eternal Goal");
-        Console.WriteLine("\t3. Chechlist Goal");
+        Console.WriteLine("\t3. Checklist Goal");
         Console.Write("Which type of goal would you like to create?");
         goaltype = Console.ReadLine();
         Console.Write("What is the name of your goal?");
